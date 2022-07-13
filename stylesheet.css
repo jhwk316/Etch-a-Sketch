@@ -1,0 +1,11 @@
+#container {
+    display: grid;
+    border: solid black;
+    height: 600px;
+    width: 600px;
+}
+
+.gridSquares {
+    display: grid;
+    border: solid black;
+}
