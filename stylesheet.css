@@ -4,17 +4,22 @@ body {
     align-items: center;
     background: url(./images/space);
     
+    background-attachment: fixed;
+    
     
 }
 
 h1 {
     border-bottom: solid;
-    border-radius: 20px;
+    border-radius: 50%;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 5px;
     font-size: 36px;
     text-align: center;
     margin-bottom: 15%;
     color: blueviolet;
-    text-shadow: white 1px 2px;
+    text-shadow: white 1px 1px;
+
 }
 
 
@@ -22,7 +27,6 @@ h1 {
 .colorButtons {
     display: flex;
     justify-content: space-evenly;
-    
     margin: none;
     color: blueviolet;
     
@@ -31,13 +35,21 @@ h1 {
 }
 
 button {
-        background-color: blueviolet;
+        background-color: rgb(114, 23, 199);
         padding: 12px 30px;
         font-weight: 800;
         border-radius: 12px;
-        border: solid thin white;
+        border: solid thin rgb(241, 238, 6);
         color: white;
         
+}
+
+#blackBtn {
+    background-color: black;
+}
+
+#rainbowBtn {
+    background:linear-gradient(red,orange,blue,green,yellow,violet);
 }
 
 button:active {
@@ -51,9 +63,13 @@ button:disabled {
 }
 
 h2 {
+    border-top: solid;
+    border-radius: 50%;
+    font-family: 'Righteous', cursive;
     text-align: center;
+    letter-spacing: 3px;
     color: blueviolet;
-    text-shadow: white 1px 2px;
+    text-shadow: rgba(208, 170, 245, 0.712) 1px 1px;
     font-size: 2em;
 }
 
@@ -81,8 +97,13 @@ h2 {
     color: white;
     text-align: center;
     font-size: 1.25em;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 0.5em;
     font-weight: 600;
     border-top: solid blueviolet;
+    border-radius: 50%;
     margin-top: 12px;
 }
+
+
 
