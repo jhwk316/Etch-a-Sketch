@@ -1,5 +1,11 @@
 const container = document.getElementById('container');
 let user = prompt("Choose layout size. Enter: 10, 20, 30, 60, or 100");
+const restart = document.querySelector('#restart'); 
+    restart.addEventListener('click', reloadPage);
+
+function reloadPage(){
+    window.location.reload();
+}    
 
 /*------Grid Board 600px X 600px------*/
 

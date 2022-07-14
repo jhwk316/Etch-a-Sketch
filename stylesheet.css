@@ -71,6 +71,12 @@ h2 {
     border: solid thin black;
 }
 
+.restart {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
 .footer {
     color: white;
     text-align: center;
