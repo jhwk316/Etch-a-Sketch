@@ -1,5 +1,5 @@
 const container = document.getElementById('container');
-let user = prompt("Choose layout size");
+let user = prompt("Choose layout size. Enter: 10, 20, 30, 60, or 100");
 
 /*------Grid Board 600px X 600px------*/
 
@@ -37,11 +37,9 @@ function makeGrid(){
 
     
         if (user != 10 && user !=20 && user !=30 && user != 60 && user != 100){
-            alert('please enter a valid size');
-           clearBoard();
-           window.location.reload();
-            
-        } 
+           clearBoard();  
+           window.location.reload();   
+        };
 
         let blackBtn = document.querySelector('#blackBtn');
             blackBtn.addEventListener('click', changeColorToBlack);
@@ -57,6 +55,7 @@ function makeGrid(){
         function changeColorToRainbow(){
             if (rainbowBtn.clicked = true){
                 gridSquares.addEventListener('mouseover', changeToRainbow);
+                document.querySelector('#blackBtn').disabled = true;
             }
         }
         
@@ -68,11 +67,12 @@ function makeGrid(){
         function changeColorToBlack(){
             if (blackBtn.clicked = true){
                 gridSquares.addEventListener('mouseover', changeToBlack);
-            }
-        }
+                document.querySelector('#rainbowBtn').disabled = true;
+            };
+        };
     };
 };
 
 makeGrid();
-changeColorToBlack();
-changeColorToRainbow();
+//changeColorToBlack();
+//changeColorToRainbow();
