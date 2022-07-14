@@ -7,5 +7,5 @@
 
 .gridSquares {
     display: grid;
-    border: solid black;
+    border: solid thin black;
 }
