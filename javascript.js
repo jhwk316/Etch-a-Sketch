@@ -51,6 +51,8 @@ function makeGrid(){
             blackBtn.addEventListener('click', changeColorToBlack);
         let rainbowBtn = document.querySelector('#rainbowBtn');
             rainbowBtn.addEventListener('click', changeColorToRainbow);
+        let eraseBtn = document.querySelector('#erase');
+            eraseBtn.addEventListener('click', eraseSquare);    
             
         function changeToRainbow(){
             let colors = ['#ff00007d', '#ffa5007d', '#ffff007d', '#0080007d', '#0000ffd7d', '#8000807d'];
@@ -74,6 +76,17 @@ function makeGrid(){
             if (blackBtn.clicked = true){
                 gridSquares.addEventListener('mouseover', changeToBlack);
                 document.querySelector('#rainbowBtn').disabled = true;
+            };
+        };
+
+        function changeToWhite(){
+            let white = '#fff';
+            gridSquares.style.backgroundColor = white;
+        };
+
+        function eraseSquare(){
+            if (eraseBtn.clicked = true){
+                gridSquares.addEventListener('click', changeToWhite);
             };
         };
     };

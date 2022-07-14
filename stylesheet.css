@@ -45,7 +45,7 @@ button:active {
 }
 
 button:disabled {
-    background-color: rgba(137, 43, 226, 0.082);
+    background-color: rgba(137, 43, 226, 0.50);
     border: none;
     color: gray;
 }
