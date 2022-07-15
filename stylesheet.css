@@ -14,12 +14,16 @@ h1 {
     letter-spacing: 5px;
     font-size: 36px;
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 8%;
     color: blueviolet;
     text-shadow: white 1px 1px;
 }
 
-
+.gridOptions {
+    display: flex;
+    justify-content: space-evenly;
+   
+}
 
 .colorButtons {
     display: flex;
@@ -27,7 +31,14 @@ h1 {
     margin: none;
     color: blueviolet;
     
+       
+}
+
+p {
+    color: white;
+    text-align: center;
     
+    font-size: 14px;
     
 }
 
@@ -48,17 +59,23 @@ button {
     background:linear-gradient(red,orange,blue,green,yellow,violet);
 }
 
+#erase {
+    background-color: white;
+    color: black;
+}
+
 button:active {
     transform: scale(0.95);
 }
 
 button:disabled {
-    background-color: rgba(137, 43, 226, 0.50);
+    background-color: rgba(128, 128, 128, 0.096);
     border: none;
     color: gray;
+    transform: scale(1);
 }
 
-h2 {
+#colorLabel {
     border-top: solid;
     border-radius: 50%;
     font-family: 'Righteous', cursive;
@@ -66,8 +83,19 @@ h2 {
     letter-spacing: 3px;
     color: blueviolet;
     text-shadow: rgba(208, 170, 245, 0.712) 1px 1px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
+
+#gridLabel {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    letter-spacing: 3px;
+    color: blueviolet;
+    text-shadow: rgba(208, 170, 245, 0.712) 1px 1px;
+    font-size: 1.5em;
+    
+}
+
 
 #container {
     display: grid;
