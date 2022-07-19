@@ -14,7 +14,36 @@ tenBtn.addEventListener('click', () => {
 
 });
 
+const twentyBtn = document.querySelector('#twenty');
+twentyBtn.addEventListener('click',() => {
+    user += 20;
+    makeGrid();
+    user -= 20;
+});
 
+const thirtyBtn = document.querySelector('#thirty');
+thirtyBtn.addEventListener('click', () => {
+    user += 30;
+    makeGrid();
+    user -= 30;
+}); 
+
+const sixtyBtn = document.querySelector('#sixty');
+sixtyBtn.addEventListener('click', () => {
+    user += 60;
+    makeGrid();
+    user -= 60;
+}); 
+
+const hundredBtn = document.querySelector('#hundred');
+hundredBtn.addEventListener('click', () => {
+    user += 100;
+    makeGrid();
+    user -= 100;
+});  
+
+const restartBtn = document.querySelector('#restart');
+  restartBtn.addEventListener('click', reload)  
    
 function reload(){
     window.location.reload();
