@@ -67,6 +67,32 @@ function makeGrid(){
             const gridSquares = document.createElement("div");
             container.appendChild(gridSquares).className = 'gridSquares';
 
+        //------Variable Conditionals-------
+
+        if (user == 10){    
+            document.getElementById('container').style.gridTemplateColumns = "repeat(auto-fit, 60px)";
+            document.getElementById('container').style.gridTemplateRows = "repeat(auto-fit, 60px)";
+        };
+
+        if (user == 20){    
+            document.getElementById('container').style.gridTemplateColumns = "repeat(auto-fit, 30px)";
+            document.getElementById('container').style.gridTemplateRows = "repeat(auto-fit, 30px)";
+        };
+
+        if (user == 30){    
+            document.getElementById('container').style.gridTemplateColumns = "repeat(auto-fit, 20px)";
+            document.getElementById('container').style.gridTemplateRows = "repeat(auto-fit, 20px)";
+        };
+
+        if (user == 60){    
+            document.getElementById('container').style.gridTemplateColumns = "repeat(auto-fit, 10px)";
+            document.getElementById('container').style.gridTemplateRows = "repeat(auto-fit, 10px)";
+        };
+
+        if (user == 100){    
+            document.getElementById('container').style.gridTemplateColumns = "repeat(auto-fit, 6px)";
+            document.getElementById('container').style.gridTemplateRows = "repeat(auto-fit, 6px)";
+        };
     
 
         //------COLOR VARIABLES-------
